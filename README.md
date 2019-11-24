@@ -3,7 +3,7 @@
 ## 
 
 
-![cap1](./img/cap1.)
+![cap1](./img/cap1.PNG)
 
 
 
