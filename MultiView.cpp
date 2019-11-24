@@ -27,7 +27,7 @@ BEGIN_MESSAGE_MAP(CMultiView, CView)
 	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CView::OnFilePrintPreview)
-	ON_COMMAND(ID_FILE_MRU_FILE1, &CMultiView::OnFileFindmax)
+	ON_COMMAND(ID_32771, &CMultiView::OnFileFindmax)
 	ON_MESSAGE(WM_MAX, &CMultiView::OnMaxFound)
 END_MESSAGE_MAP()
 
@@ -139,8 +139,9 @@ LRESULT CMultiView::OnMaxFound(WPARAM wParam, LPARAM lParam)
 	// TODO: 여기에 구현 코드 추가.
 	CClientDC dc(this);
 	CString msg;
+	dc.TextOut(80, 100, L"Max Num : ");
 	msg.Format(L"%d", data.max);
-	dc.TextOut(10,100,msg);
+	dc.TextOut(160,100,msg);
 	TerminateThread(Thread, 0);
 	return 0;
 }

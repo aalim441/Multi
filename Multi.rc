@@ -124,7 +124,7 @@ BEGIN
         MENUITEM "최근에 사용한 파일",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
         MENUITEM "끝내기(&X)",                     ID_APP_EXIT
-        MENUITEM "Find Maximum",                ID_FILE_MRU_FILE1
+        MENUITEM "Find Maximum",                ID_32771
     END
     POPUP "편집(&E)"
     BEGIN
