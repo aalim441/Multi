@@ -36,7 +36,7 @@ MultiView.h에 정수 배열 5개의 정수와
 
 HWND를 가지는 구조체를 정의 합니다.
 
-
+2.
 ![code2](./img/code2.PNG)
 
 메뉴를 선택하면 쓰레드가 시작이 되고
@@ -48,16 +48,19 @@ HWND에는 현재의 윈도우 m_hWnd 저장시킵니다.
 또한 ThreadProcedure 함수를 호출 합니다. 데이터는 data에 전달됩니다.
 
 
-
+3.
 ![code3](./img/code3.PNG)
 
 최댓값을 찾고 WM_MAX를 발생시킵니다.
 
 
+4.
 ![code4](./img/code4.PNG)
 
 WM_MAX가 발생하면 OnMaxFound 함수를 발생시킵니다.
 
+
+5.
 ![code5](./img/code5.PNG)
 
 data값의 최댓값을 출력합니다.
